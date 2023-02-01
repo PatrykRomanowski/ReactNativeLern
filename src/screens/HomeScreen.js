@@ -42,16 +42,34 @@ const HomeScreen = (props) => {
           props.navigation.navigate("Sqere");
         }}
       ></Button>
+      <Button
+        title="Go to Reducer"
+        onPress={() => {
+          props.navigation.navigate("Reducer");
+        }}
+      ></Button>
+      <Button
+        title="Go to Text text input"
+        onPress={() => {
+          props.navigation.navigate("TextScreen");
+        }}
+      ></Button>
+      <Button
+        title="Go to box screent"
+        onPress={() => {
+          props.navigation.navigate("BoxScreen");
+        }}
+      ></Button>
       <TouchableOpacity style={styles.button}>
+        {/* <Text style={styles.text2}>XD</Text> */}
+        {/* <Text style={styles.text2}>XD</Text>
         <Text style={styles.text2}>XD</Text>
         <Text style={styles.text2}>XD</Text>
         <Text style={styles.text2}>XD</Text>
         <Text style={styles.text2}>XD</Text>
         <Text style={styles.text2}>XD</Text>
         <Text style={styles.text2}>XD</Text>
-        <Text style={styles.text2}>XD</Text>
-        <Text style={styles.text2}>XD</Text>
-        <Text style={styles.text2}>XD</Text>
+        <Text style={styles.text2}>XD</Text> */}
       </TouchableOpacity>
       {/* <TouchableOpacity onPress={() => props.navigation.navigate("List")}>
         <Text>Go To lIst demo</Text>
