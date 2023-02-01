@@ -1,5 +1,9 @@
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
+import {
+  createAppContainer
+} from "react-navigation";
+import {
+  createStackNavigator
+} from "react-navigation-stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import ComponentScreen from "./src/screens/ComponentScreens";
 import PersonComponent from "./src/screens/PersonComponent";
@@ -12,28 +16,27 @@ import ReducerSquereScreen from "./src/screens/ReducerSquereScreen";
 import CounterReducerScreen from "./src/screens/CounterReducerScreen";
 import TextScreen from "./src/screens/TextScreen";
 import BoxScreen from "./src/screens/BoxScreen";
+import BoxesPositionChellenge from "./src/screens/BoxesPositionChellenge";
 
-const navigator = createStackNavigator(
-  {
-    Home: HomeScreen,
-    Components: ComponentScreen,
-    Person: PersonComponent,
-    List: ListScreen,
-    Image: ImageScreen,
-    Counter: CounterScreen,
-    Color: ColorScreen,
-    Sqere: SqereScreen,
-    Reducer: ReducerSquereScreen,
-    CounterReducer: CounterReducerScreen,
-    TextScreen: TextScreen,
-    BoxScreen: BoxScreen,
+const navigator = createStackNavigator({
+  Home: HomeScreen,
+  Components: ComponentScreen,
+  Person: PersonComponent,
+  List: ListScreen,
+  Image: ImageScreen,
+  Counter: CounterScreen,
+  Color: ColorScreen,
+  Sqere: SqereScreen,
+  Reducer: ReducerSquereScreen,
+  CounterReducer: CounterReducerScreen,
+  TextScreen: TextScreen,
+  BoxScreen: BoxScreen,
+  BoxChellenge: BoxesPositionChellenge,
+}, {
+  initialRouteName: "Home",
+  defaultNavigationOptions: {
+    title: "App",
   },
-  {
-    initialRouteName: "Home",
-    defaultNavigationOptions: {
-      title: "App",
-    },
-  }
-);
+});
 
 export default createAppContainer(navigator);

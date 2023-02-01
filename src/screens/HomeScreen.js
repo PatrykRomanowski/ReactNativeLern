@@ -60,6 +60,12 @@ const HomeScreen = (props) => {
           props.navigation.navigate("BoxScreen");
         }}
       ></Button>
+      <Button
+        title="Go to box chellenge"
+        onPress={() => {
+          props.navigation.navigate("BoxChellenge");
+        }}
+      ></Button>
       <TouchableOpacity style={styles.button}>
         {/* <Text style={styles.text2}>XD</Text> */}
         {/* <Text style={styles.text2}>XD</Text>
